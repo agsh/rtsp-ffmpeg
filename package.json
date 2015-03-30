@@ -1,0 +1,7 @@
+{
+  "name": "rtsp-ffmpeg",
+  "version": "0.0.1",
+  "author": "Andrew D.Laptev <a.d.laptev@gmail.com>",
+  "description": "ffmpeg wrapper for rtsp streaming",
+  "main": "lib/rtsp-ffmpeg.js"
+}
