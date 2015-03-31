@@ -3,5 +3,14 @@
   "version": "0.0.1",
   "author": "Andrew D.Laptev <a.d.laptev@gmail.com>",
   "description": "ffmpeg wrapper for rtsp streaming",
-  "main": "lib/rtsp-ffmpeg.js"
+  "main": "lib/rtsp-ffmpeg.js",
+  "keywords": [
+    "rtsp",
+    "ffmpeg",
+    "mjpeg",
+    "motionjpeg"
+  ],
+  "devDependencies": {
+    "socket.io": "^1.3.0"
+  }
 }
