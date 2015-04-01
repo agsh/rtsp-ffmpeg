@@ -15,7 +15,7 @@ var cams = [
 		, 'rtsp://192.168.68.111/h264main'
 		, 'rtsp://r1---sn-5hn7su76.c.youtube.com/CiILENy73wIaGQn8uA5p5adowhMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp'
 	].map(function(uri, i) {
-		var stream = new rtsp.FFMpeg({input: uri});
+		var stream = new rtsp.FFMpeg({input: uri, resolution: '320x240', quality: 3});
 		stream.on('start', function() {
 			console.log('stream ' + i + ' started');
 		});

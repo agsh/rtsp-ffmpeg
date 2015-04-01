@@ -1,6 +1,6 @@
-# rtsp-ffmpeg-mjpeg
-Node.js FFMpeg wrapper for streaming RTSP into MotionJPEG. It runs FFMpeg process only when someone is subscribed to
-its `data` event.
+# rtsp-ffmpeg
+Lazy Node.js FFMpeg wrapper for streaming RTSP into MotionJPEG. It runs FFMpeg process only when someone is subscribed to
+its `data` event. Every `data` event contains one image `Buffer` object.
 
 ## Sample
 With [socket.io](http://socket.io/) library.
@@ -40,4 +40,15 @@ Client (index.html):
 </script>
 ```
 
-For more detailed example look at `/example/server.js`
+For more detailed example look at [/example/server.js](/example/server.js)
+
+## FFMpeg
+
+```javascript
+  var ffmpeg = new FFMpeg({
+    input: 'rtsp://localhost' // stream uri
+    , rate: 10 // output framerate (optional)
+    , resolution: '640x480' // output resolution in WxH format (optional)
+    , quality: 3 // JPEG compression quality level (optional)
+  });
+```
