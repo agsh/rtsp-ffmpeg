@@ -15,9 +15,10 @@ server.listen(6147);
 var uri = 'rtsp://r3---sn-5hn7su7k.c.youtube.com/CiILENy73wIaGQkcfGRribM88BMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp',
   stream = new rtsp.FFMpeg({input: uri});
 io.on('connection', function(socket) {
-  stream.on('data', function(data) {
-    socket.emit('data', data);
-  });
+  var pipeStream = function(data) {
+    socket.emit('data', data.toString('base64'));
+  };
+  stream.on('data', pipeStream);
   socket.on('disconnect', function() {
     stream.removeListener('data', pipeStream);
   });
