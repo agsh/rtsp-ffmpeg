@@ -53,3 +53,6 @@ For more detailed example look at [/example/server.js](/example/server.js)
     , quality: 3 // JPEG compression quality level (optional)
   });
 ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/agsh/rtsp-ffmpeg/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
