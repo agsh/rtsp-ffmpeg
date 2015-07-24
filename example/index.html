@@ -19,7 +19,7 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-	var socket = io('');
+	var socket = io();
 	socket.on('start', function(cou) {
 		var container = document.getElementById('container');
 		document.getElementById('add').onclick = function() {
@@ -38,7 +38,8 @@
 				if (divSocket) {
 					divSocket.disconnect();
 				}
-				divSocket = io(this.value).connect();
+                console.log(this.value);
+				divSocket = io(location.origin + this.value).connect();
 				divSocket.on('data', function(data) {
 					var bytes = new Uint8Array(data);
 					image.src = 'data:image/jpeg;base64,' + base64ArrayBuffer(bytes);
