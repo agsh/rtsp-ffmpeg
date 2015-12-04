@@ -8,7 +8,10 @@ const app = require('express')()
 	, rtsp = require('../lib/rtsp-ffmpeg')
 	;
 
-server.listen(6147);
+server.listen(6147, function(){
+	console.log('Listening on localhost:6147');
+});
+
 
 var cams = [
 		'rtsp://r3---sn-5hn7su76.c.youtube.com/CiILENy73wIaGQnup-1SztVOYBMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp'
