@@ -2,6 +2,12 @@
 Lazy Node.js FFMpeg wrapper for streaming RTSP into MotionJPEG. It runs FFMpeg process only when someone is subscribed to
 its `data` event. Every `data` event contains one image `Buffer` object.
 
+## Installation
+
+1. Download [FFmpeg](http://www.ffmpeg.org/) to your local machine.
+
+2. Install package in your project `npm install rtsp-ffmpeg`
+
 ## Sample
 With [socket.io](http://socket.io/) library.
 
@@ -55,4 +61,3 @@ For more detailed example look at [/example/server.js](/example/server.js)
 ```
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/agsh/rtsp-ffmpeg/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
