@@ -39,7 +39,7 @@
 					divSocket.disconnect();
 				}
                 console.log(this.value);
-				divSocket = io(location.origin + this.value).connect();
+				divSocket = io(location.origin + this.value);
 				divSocket.on('data', function(data) {
 					var bytes = new Uint8Array(data);
 					image.src = 'data:image/jpeg;base64,' + base64ArrayBuffer(bytes);
