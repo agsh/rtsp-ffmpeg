@@ -48,6 +48,7 @@ Client (index.html):
 ```
 
 For more detailed example look at [/example/server.js](/example/server.js)
+For large images resolution or IP cameras example check [/example/server-canvas.js](/example/server-canvas.js)
 
 ## FFMpeg
 
