@@ -1,8 +1,23 @@
 {
   "name": "rtsp-ffmpeg",
-  "version": "0.0.12",
+  "license": "MIT",
+  "version": "0.0.13",
   "author": "Andrew D.Laptev <a.d.laptev@gmail.com>",
-  "description": "ffmpeg wrapper for rtsp streaming",
+  "contributors": [
+    {
+      "name": "Seikon",
+      "url": "https://github.com/Seikon"
+    },
+    {
+      "name": "Igor Koval",
+      "url": "https://github.com/igkvl"
+    },
+    {
+      "name": "Andrew D.Laptev",
+      "email": "a.d.laptev@gmail.com"
+    }
+  ],
+  "description": "ffmpeg wrapper for rtsp streaming via node.js",
   "main": "lib/rtsp-ffmpeg.js",
   "keywords": [
     "rtsp",
