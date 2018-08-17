@@ -17,7 +17,7 @@
       "email": "a.d.laptev@gmail.com"
     }
   ],
-  { "engines" : { "node" : ">=6" } }
+  { "engines" : { "node" : ">=6" } },
   "description": "ffmpeg wrapper for rtsp streaming via node.js",
   "main": "lib/rtsp-ffmpeg.js",
   "keywords": [
