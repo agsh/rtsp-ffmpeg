@@ -10,7 +10,7 @@ server.listen(6147, function(){
 
 
 var cams = [
-		'rtsp://mpv.cdn3.bigCDN.com:554/bigCDN/definst/mp4:bigbuckbunnyiphone_400.mp4'
+		'rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov'
 		, 'rtsp://192.168.1.168/h264main'
 		, 'udp://localhost:1234'
 	].map(function(uri, i) {
