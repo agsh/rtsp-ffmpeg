@@ -18,7 +18,7 @@ const app = require('express')(),
   io = require('socket.io')(server),
   rtsp = require('rtsp-ffmpeg');
 server.listen(6147);
-var uri = 'rtsp://r3---sn-5hn7su7k.c.youtube.com/CiILENy73wIaGQkcfGRribM88BMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp',
+var uri = 'rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream',
   stream = new rtsp.FFMpeg({input: uri});
 io.on('connection', function(socket) {
   var pipeStream = function(data) {
