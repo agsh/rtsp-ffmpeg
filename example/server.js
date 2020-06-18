@@ -15,7 +15,7 @@ server.listen(6147, function(){
 
 var cams = [
 		'rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov'
-		, 'rtsp://192.168.68.111/h264main'
+		, 'rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream'
 		, 'udp://localhost:1234'
 	].map(function(uri, i) {
 		var stream = new rtsp.FFMpeg({input: uri, resolution: '320x240', quality: 3});
