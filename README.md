@@ -62,3 +62,9 @@ For large images resolution or IP cameras example check [/example/server-canvas.
     , quality: 3 // JPEG compression quality level (optional)
   });
 ```
+
+If you have an error `Error: spawn ffmpeg ENOENT`, you should first install ffmpeg package.
+After that, if the starup command differs from `ffmpeg`, you can change it in the static property like this, for example:
+```js
+FFMpeg.cmd = 'C:\\ffmpeg.exe';
+```
