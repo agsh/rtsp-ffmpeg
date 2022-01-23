@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 
 Client (index.html):
 ### NB! 
-this is not efficient example, but simple. For drawing images on canvas please look on this [example](https://github.com/agsh/rtsp-ffmpeg/blob/master/example/index-canvas.html) by [Seikon](https://github.com/Seikon):  
+this is not efficient example, but simple. For drawing images on canvas please look at this [example](https://github.com/agsh/rtsp-ffmpeg/blob/master/example/index-canvas.html) by [Seikon](https://github.com/Seikon):  
 ```html
 <img id="img">
 <script src="/socket.io/socket.io.js"></script>
