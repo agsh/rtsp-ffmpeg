@@ -50,7 +50,7 @@ this is not efficient example, but simple. For drawing images on canvas please l
 ```
 
 For more detailed example look at [/example/server.js](/example/server.js)
-For large images resolution or IP cameras example check [/example/server-canvas.js](/example/server-canvas.js)
+For the large resolution images or IP cameras example check [/example/server-canvas.js](/example/server-canvas.js)
 
 ## FFMpeg
 
