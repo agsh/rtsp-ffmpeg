@@ -38,28 +38,31 @@
 				if (divSocket) {
 					divSocket.disconnect();
 				}
+				if (this.value === '/') {
+					return;
+				}
                 console.log(this.value);
 				divSocket = io(location.origin + this.value);
 				divSocket.on('data', function(data) {
-				
+
 					var bytes = new Uint8Array(data);
-					
+
 					var blob = new Blob([bytes], {type: 'application/octet-binary'});
-					
+
 					var url = URL.createObjectURL(blob);
-					
+
 					var img = new Image;
-					
+
 					var ctx = canvas.getContext("2d");
-										
+
 					img.onload = function() {
 						URL.revokeObjectURL(url);
 						ctx.drawImage(img,100,100);
 
 					};
-					
+
 					img.src = url;
-					
+
 					//image.src = 'data:image/jpeg;base64,' + base64ArrayBuffer(bytes);
 				});
 			};
