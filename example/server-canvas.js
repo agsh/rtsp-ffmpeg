@@ -10,9 +10,10 @@ server.listen(6147, function(){
 
 
 var cams = [
-		'rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov'
-		, 'rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream'
-		, 'udp://localhost:1234'
+		'http://webcam.mchcares.com/mjpg/video.mjpg?timestamp=1566232173730',
+		'http://77.222.181.11:8080/mjpg/video.mjpg',
+		'http://tamperehacklab.tunk.org:38001/nphMotionJpeg?Resolution=640x480&Quality=Clarity',
+		'udp://localhost:1234' // Your rtsp stream
 	].map(function(uri, i) {
 		var stream = new rtsp.FFMpeg({input: uri, resolution: '320x240', quality: 3});
 		stream.on('start', function() {

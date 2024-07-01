@@ -38,6 +38,9 @@
 				if (divSocket) {
 					divSocket.disconnect();
 				}
+				if (this.value === '/') {
+					return;
+				}
                 console.log(this.value);
 				divSocket = io(location.origin + this.value);
 				divSocket.on('data', function(data) {
