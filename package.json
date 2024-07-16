@@ -1,7 +1,7 @@
 {
   "name": "rtsp-ffmpeg",
   "license": "MIT",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "author": "Andrew D.Laptev <a.d.laptev@gmail.com>",
   "contributors": [
     {
